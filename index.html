@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/starter.css" />
+
+</head>
+
+<body>
+    <main>
+        <h1>Discussion: JS Event Listeners</h1>
+        <div class="question">Only use JavaScript. Only edit HTML to link the JS file.</div>
+        <div class="question">
+            <span>1</span>
+            Use JavaScript to update your name in the corresponding blue box
+        </div>
+        <div class="student-grid">
+            <div>
+                <p><strong>Host</strong></p>
+                <p id="host-name">Add your name here</p>
+            </div>
+            <div>
+                <p><strong>Collaborator</strong></p>
+                <p id="collaborator-name">Add your name here</p>
+            </div>
+            <div>
+                <p><strong>Collaborator 2</strong></p>
+                <p id="collaborator-2-name">Add your name here</p>
+            </div>
+        </div>
+        <hr />
+
+        <div class="question"><span>2</span>
+            <div>
+                <p>There is a floating button in the top right corner. Turn it into a toggle button. On click, it should
+                    hide/remove all the instructions (yellow boxes). Update the button text accordingly.</p>
+                <p><strong>Challenge: </strong>Add a keyboard shortcut 'i' to do the same. </p>
+            </div>
+        </div>
+        <hr />
+
+
+        <button type="button" id="instruction_button">Hide Instructions</button>
+        <form>
+            <div class="question"><span>3</span>As the user types, if the user enters first name as 'John', autopopulate
+                the last name to 'Doe'</div>
+            <div class="label-grid">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="firstname" />
+
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="lastname" />
+
+            </div>
+
+            <div class="question"><span>4</span>There is a preconfigured variable called 'pokemonList'. As the user
+                types, check if the user already exists in that array. If yes, change the alert text to "Username
+                already exists". If not, change the alert to "Unique username created"</div>
+            <div class="label-grid">
+                <label for="user_name">Username</label>
+                <input type="text" id="user_name" name="username" />
+                <p id="username-alert">Username alert text</p>
+            </div>
+            <hr />
+
+            <div class="question">
+                <span>5</span>
+                <div>
+                    <p>Check if the passwords match as and when the user is typing.
+                        If they match, change the alert text below to "Password Matches". If they don't match, change
+                        the text to "Password does not match". </p>
+                    <p><strong>Challenge: </strong>Implement the Hide Password button. The button text should change
+                        accordingly. Also add a keyboard shortcut 'h' to do the same. </p>
+                </div>
+            </div>
+            <div class="label-grid">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" />
+
+
+                <label for="confirm_password">Confirm Password</label>
+                <input type="text" id="confirm_password" name="confirm_password" />
+                <button type="button" id="hide-password">Hide Password</button>
+                <p id="password-alert">Password alert text</p>
+            </div>
+            <hr />
+
+
+            <div class="question"><span>6</span>Once an option is selected, there is no way to reset a radio button. Add
+                a 'Reset' button below and clear the selected value.</div>
+            <fieldset>
+                <legend>Your favorite day of the week</legend>
+                <button type="button" id="radio-reset-button">Reset</button>
+                <div>
+                    <p>
+                        <input type="radio" name="favorite_day" id="week_tue" value="tuesday" />
+                        <label for="week_tue">Tuesday</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="favorite_day" id="week_wed" value="wednesday" />
+                        <label for="week_wed">Wednesday</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="favorite_day" id="week_thu" value="thursday" />
+                        <label for="week_thu">Thursday</label>
+                    </p>
+                </div>
+            </fieldset>
+            <hr />
+
+
+            <div class="question"><span>7</span>If the chosen image is larger than 100KB, alert the user. Remove the
+                chosen file selection</div>
+            <p>
+                <label for="profile_pic">Upload your picture</label>
+            </p>
+            <input type="file" id="profile_pic" name="profile_pic" />
+            <hr />
+
+
+            <div class="question">
+                <span>8</span>
+                <div>
+                    <p>
+                        Change the background color of the page, when the user chooses a color</p>
+                    <p>
+                        <strong>Challenge:</strong> Change the text color automatically if it is not accessible.
+                    </p>
+                </div>
+            </div>
+            <label for="color-picker">Choose your background color</label>
+            <input id="color-picker" type="color" />
+            <hr />
+            <div class="question"><span>9</span>
+                <div>
+                    <p>This button should clear all the form values.</p>
+                    <p><strong>Challenge: </strong>Add a keyboard shortcut 'r' to do the same. </p>
+                </div>
+            </div>
+            <button type="button" class="reset-form-button">Reset Form</button>
+
+
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

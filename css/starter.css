@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+hr {
+    margin: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.student-grid > div {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#instruction_button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.question {
+    margin: 20px 0 10px 0;
+    padding: 20px;
+    background-color: lightyellow;
+    border: 1px solid burlywood;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.question > span {
+    font-size: xx-large;
+    opacity: 0.90;
+}
+
+.hidden {
+    display: none;
+}
+
+.label-grid {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+}
+
+#password-alert, #username-alert {
+    grid-column-start: 2;
+}
+
+.reset-form-button {
+    width: 100%;
+}
